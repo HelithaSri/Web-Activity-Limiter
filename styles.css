@@ -85,13 +85,16 @@ header {
     background: #FF0000;
 }
 
-.div-box {
+.div-card {
     width: 370px;
     height: 134px;
     background-color: #34495E;
     border-radius: 23px;
     border: 1px solid #BDC3C7;
 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 footer {
@@ -124,3 +127,60 @@ footer>* {
     border-color: #BDC3C7;
 }
  */
+
+
+/* --------- Card --------- */
+
+
+.flex-card {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #ECF0F1;
+}
+
+.time {
+    display: flex;
+    gap: 20px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: capitalize;
+    color: #ECF0F1;
+}
+
+.btnSet {
+    display: flex;
+    gap: 10px;
+}
+
+.btnSet>div {
+    width: 60px;
+    height: 24px;
+    background-color: rosybrown;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.btnEdit{
+    background-color: #2ECC71 !important;
+}
+.play{
+    background-color: #3498DB !important;
+}
+.stop{
+    background-color: #E67E22 !important;
+}
+.delete{
+    background-color: #E74C3C !important;
+}
