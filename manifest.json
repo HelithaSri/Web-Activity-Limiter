@@ -1,0 +1,11 @@
+{
+    "name": "Web Activity Limiter",
+    "version": "1.0.0",
+    "description": "Manage your time on websites.",
+    "manifest_version": 3,
+    "author": "HelithaSri",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Web Activity Limiter"
+    }
+}
