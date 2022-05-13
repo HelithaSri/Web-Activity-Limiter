@@ -12,7 +12,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css">
     <title>Web Activity Limiter</title>
@@ -23,7 +24,10 @@
 
         <header>
             <div id="head-div">
-                <div id="add_new">ADD NEW</div>
+                <div id="add_new" data-bs-toggle="modal" data-bs-target="#addNewModal" data-bs-whatever="@getbootstrap">
+                    ADD NEW</div>
+
+
                 <div id="line" class="head_Line">
                     <hr>
                 </div>
@@ -127,6 +131,49 @@
             </div>
         </div>
 
+        <!-- model -->
+
+        <div class="modal fade" id="addNewModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Site Name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Site Url</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Daily Limit</label>
+                            </div>
+                            <!-- 
+                            <div class="d-grid">
+                                <button type="button" class="btn">ADD</button>
+                            </div> -->
+                        </form>
+
+
+
+                    </div>
+                    <div class="modal-footer d-grid">
+                        <button type="button" class="btn">ADD</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- end -->
+
         <footer id="footer-div">
             <div id="line" class="bottom_Line">
                 <hr>
@@ -135,6 +182,7 @@
         </footer>
 
     </section>
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

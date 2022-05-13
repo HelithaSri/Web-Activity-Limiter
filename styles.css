@@ -175,15 +175,65 @@ footer>* {
     cursor: pointer;
 }
 
-.btnEdit{
+.btnEdit {
     background-color: #2ECC71 !important;
 }
-.play{
+
+.play {
     background-color: #3498DB !important;
 }
-.stop{
+
+.stop {
     background-color: #E67E22 !important;
 }
-.delete{
+
+.delete {
     background-color: #E74C3C !important;
 }
+
+/* model */
+
+.modal-content {
+    background-color: #2C3E50;
+    color: #ECF0F1;
+    border-radius: 25px;
+}
+
+.modal-header {
+    border-bottom: 0 none;
+}
+
+.btn-close {
+    background-color: #627486;
+    border-radius: 25px;
+}
+
+input[type="text"] {
+    background-color: #627486;
+    color: #ECF0F1;
+    border-radius: 32px;
+}
+
+input[type="text"]:focus {
+    background-color: #627486;
+    color: #ECF0F1;
+}
+
+.btn {
+    background-color: #2ECC71;
+    color: white;
+    font-weight: 700;
+    border-radius: 32px;
+    /* margin: 0 0 24px 0; */
+}
+
+.btn:hover {
+    color: white;
+}
+
+.modal-footer {
+    border-top: 0 none;
+    justify-content: normal;
+}
+
+/* model end */
