@@ -140,21 +140,21 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form>
+                        <form id="inputFormID">
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="floatingInput"
-                                    placeholder="name@example.com">
-                                <label for="floatingInput">Site Name</label>
+                                <input type="text" class="form-control" id="siteName"
+                                    placeholder="name@example.com" name="fSiteName">
+                                <label for="siteName">Site Name</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="floatingInput"
-                                    placeholder="name@example.com">
-                                <label for="floatingInput">Site Url</label>
+                                <input type="text" class="form-control" id="siteUrl"
+                                    placeholder="name@example.com" name="fSiteUrl">
+                                <label for="siteUrl">Site Url</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="floatingInput"
-                                    placeholder="name@example.com">
-                                <label for="floatingInput">Daily Limit</label>
+                                <input type="text" class="form-control" id="dLimit"
+                                    placeholder="name@example.com" name="fDLimit">
+                                <label for="dLimit">Daily Limit</label>
                             </div>
                             <!-- 
                             <div class="d-grid">
@@ -166,7 +166,7 @@
 
                     </div>
                     <div class="modal-footer d-grid">
-                        <button type="button" class="btn">ADD</button>
+                        <button id="addBtn" type="button" class="btn">ADD</button>
                     </div>
                 </div>
             </div>
@@ -183,6 +183,8 @@
 
     </section>
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
