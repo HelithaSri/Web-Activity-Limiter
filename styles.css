@@ -219,6 +219,24 @@ input[type="text"]:focus {
     color: #ECF0F1;
 }
 
+/* input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    -webkit-box-shadow: none;
+}
+
+input:-webkit-autofill{
+    -webkit-box-shadow: none;
+} */
+
+input:-webkit-autofill{
+    -webkit-box-shadow: 0 0 0 30px #627486 inset !important;
+    -webkit-text-fill-color: #ECF0F1 !important;
+}
+
+
 .btn {
     background-color: #2ECC71;
     color: white;
